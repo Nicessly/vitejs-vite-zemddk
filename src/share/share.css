@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+}
+/* share.css */
+.create-post {
+  padding: 8px 20px;
+  position: static;
+  max-width: 433px;
+  margin: 5px auto;
+  border: none;
+  border-radius: 10px;
+  display: flex; /* Añadido */
+  align-items: center; /* Añadido */
+  background-color: #212121;
+}
+
+.profile-pic{
+ cursor: pointer;
+  margin-right: 20px;
+  background-color: #212121;
+}
+
+.per {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#create-post {
+  flex: 1; /* Añadido */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+button.bo{
+  background: rgb(244,118,0);
+  background: linear-gradient(90deg, rgba(244,118,0,1) 0%, rgb(255, 174, 0) 100%);
+  border: none;
+  border-radius: 20px;
+  padding: 9px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+}
+
+
+.in {
+    background-color: #212121;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    resize: none;
+    color: rgb(255, 255, 255); /* Cambiar el color del texto */
+  }
+
+/* share.css */
+
+/* Estilos para el contenedor del input de imagen y el icono */
+.ba-container {
+  background-color: transparent;
+  position: relative; /* Para posicionar el icono sobre el input */
+  display: inline-block; /* Para que el contenedor se ajuste al tamaño del contenido */
+}
+
+.input-image {
+  background-color: transparent;
+  z-index: 2;
+  position: absolute; /* Para superponer el input debajo del icono */
+  opacity: 0; /* Para ocultar el input visualmente */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; /* Para que el cursor cambie al pasar sobre el icono */
+}
+
+.ba {
+  background-color: transparent;
+  position: relative; /* Ajusta la posición del icono */
+  z-index: 1; /* Para que el icono esté sobre el input */
+}
