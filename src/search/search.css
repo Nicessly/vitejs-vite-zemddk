@@ -1,0 +1,49 @@
+/* search.css */
+
+.search-wrapper {
+  position: fixed;
+  width: 300px;
+  top: 83px; /* Distancia desde la parte superior */
+  right: 11px; /* Distancia desde la derecha */
+  background-color: #212121; /* Color de fondo gris oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+.search-header {
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-header h4 {
+  margin: 8px;
+  color: #ffffff; 
+}
+/* Contenedor principal del cuadro de búsqueda */
+.search-container {
+  top: 80px; /* Distancia desde la parte superior */
+  right: 20px; /* Distancia desde la derecha */
+  width: 300px; /* Ancho máximo */
+}
+
+.hola:hover{
+  background-color: #f5620d;
+}
+
+/* Media Query para hacer que el cuadro de búsqueda se ajuste en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    display: none; /* Oculta el contenedor en dispositivos móviles */
+  }
+  .search-box-container {
+    top: auto; /* Elimina la posición fija en dispositivos móviles */
+    bottom: 20px; /* Coloca el cuadro de búsqueda en la parte inferior */
+    right: 50%; /* Centra horizontalmente */
+    transform: translateX(50%); /* Centra horizontalmente */
+    width: 90%; /* Ancho del 90% */
+    max-width: none; /* Elimina el ancho máximo */
+  }
+}
+

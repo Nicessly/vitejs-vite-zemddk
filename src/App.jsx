@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Nav from './nav.jsx/nav'
 import Share from './share/share'
 import Post from './PostCard/Post'
+import SearchBox from './search/seach'
 
 
 
@@ -12,6 +13,7 @@ function App() {
       <div>
       <Nav/>
       <Share/>
+      <SearchBox sx={{ display: 'inlie-block', justifyContent: 'space-between' }}/>
       <Post/>
       </div>
   )
